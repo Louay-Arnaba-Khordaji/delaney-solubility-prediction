@@ -22,5 +22,6 @@ The dataset contains chemical properties for various molecular compounds:
 
 ### 1. Clone the repository:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
+git clone [https://github.com/Louay-Arnaba-Khordaji/delaney-solubility-prediction.git](https://github.com/Louay-Arnaba-Khordaji/delaney-solubility-prediction.git)
+cd delaney-solubility-prediction
+
