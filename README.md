@@ -34,13 +34,13 @@ delaney-solubility-prediction/
 └── README.md                                 # Project documentation
 
 ```
-🛠️ Requirements & Dependencies
+## 🛠️ Requirements & Dependencies
 Python Environment
 Python 3.x
 
 jupyter
 
-Core Data Science Stack
+## Core Data Science Stack
 numpy
 
 pandas
@@ -49,11 +49,11 @@ scikit-learn
 
 matplotlib
 
-Install all required Python packages via pip:
+## Install all required Python packages via pip:
 
 Bash
 pip install -r requirements.txt
-🚀 Execution Instructions
+## 🚀 Execution Instructions
 Running the Notebook Setup
 Clone this repository or download the source directory files locally.
 
@@ -65,7 +65,7 @@ Bash
 jupyter notebook
 Open ML_Project.ipynb from the browser interface and run the code blocks sequentially.
 
-📈 Data Layout & Model Outputs
+## 📈 Data Layout & Model Outputs
 The underlying dataset (delaney_solubility_with_descriptors.csv) follows a structured matrix layout:
 
 Feature Columns (1-4): Structural chemical descriptors (MolLogP, MolWt, NumRotatableBonds, AromaticProportion).
@@ -78,12 +78,12 @@ Training Metrics: Baseline performance values showing how tightly the model fit 
 
 Testing Metrics: Generalization performance metrics indicating predictive validity on unseen molecules.
 
-🖥️ Visualizing Results
+## 🖥️ Visualizing Results
 The final cells of the workflow generate a scatter plot comparing Experimental logS (Ground Truth) directly against Predicted logS calculated by the model.
 
 A linear trendline is automatically computed and superimposed onto the plot using numpy.polyfit. A perfect model prediction pipeline would see all data points clustered perfectly along this diagonal progression vector.
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 Language: Python
 
 Machine Learning API: Scikit-Learn (sklearn)
@@ -92,5 +92,5 @@ Libraries: Pandas, NumPy, Matplotlib, Jupyter
 
 Environment: Jupyter Notebook / Anaconda
 
-👥 Author
+## 👥 Author
 Louay Arnaba Khordaji
