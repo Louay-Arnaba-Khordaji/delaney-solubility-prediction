@@ -32,6 +32,8 @@ delaney-solubility-prediction/
 ├── data/                                     # Output/Input directory for simulation data
 │   └── delaney_solubility_with_descriptors.csv # Underlying Delaney solubility chemical dataset
 └── README.md                                 # Project documentation
+
+```
 🛠️ Requirements & Dependencies
 Python Environment
 Python 3.x
@@ -90,5 +92,5 @@ Libraries: Pandas, NumPy, Matplotlib, Jupyter
 
 Environment: Jupyter Notebook / Anaconda
 
-👥 Authors
+👥 Author
 Louay Arnaba Khordaji
