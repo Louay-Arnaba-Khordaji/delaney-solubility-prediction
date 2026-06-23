@@ -1,27 +1,34 @@
-# delaney-solubility-prediction
-A machine learning project using Linear Regression to predict chemical aqueous solubility based on molecular properties.
-# Predicting Aqueous Solubility (logS) Using Linear Regression
+# Aqueous Solubility Prediction (logS)
 
-This repository contains a machine learning workflow to predict the aqueous solubility (`logS`) of chemical compounds based on their molecular descriptors using the classic **Delaney Solubility Dataset**.
+A Python and Scikit-Learn project that implements a **Linear Regression** model to predict the aqueous solubility (`logS`) of chemical compounds based on structural molecular descriptors. 
 
-## 📊 Dataset Description
-The dataset contains chemical properties for various molecular compounds:
-* **MolLogP:** Octanol-water partition coefficient (measures fat solubility).
-* **MolWt:** Molecular weight of the compound.
-* **NumRotatableBonds:** Number of freely rotating single bonds (flexibility).
-* **AromaticProportion:** Proportion of heavy atoms that are part of an aromatic ring.
-* **logS (Target):** The experimental aqueous solubility (logarithm of molar concentration).
+The program evaluates model performance across split datasets and compares training vs. testing errors to assess predictive accuracy and generalization capabilities.
 
-## 🛠️ Project Workflow
-1. **Data Loading & Exploration:** Inspected features and statistical distributions using `pandas`.
-2. **Data Splitting:** Partitioned the dataset into an 80/20 train-test split using `scikit-learn`.
-3. **Model Implementation:** Built a `Linear Regression` model to capture linear relationships between molecular descriptors and solubility.
-4. **Evaluation:** Evaluated performance across both training and test subsets using Mean Squared Error (MSE) and $R^2$ Score.
+---
 
-## 🚀 How to Run the Project
+## 📊 Project Features & Workflow
 
-### 1. Clone the repository:
-```bash
-git clone [https://github.com/Louay-Arnaba-Khordaji/delaney-solubility-prediction.git](https://github.com/Louay-Arnaba-Khordaji/delaney-solubility-prediction.git)
-cd delaney-solubility-prediction
+1. **Data Preprocessing:** Loads and parses chemical attributes from the classic Delaney Solubility dataset using `pandas`.
+2. **Feature Engineering:** Extracts structural and physical molecular descriptors as inputs ($X$) to predict the target solubility variable ($y$):
+   * `MolLogP` (Octanol-Water Partition Coefficient)
+   * `MolWt` (Molecular Weight)
+   * `NumRotatableBonds` (Molecular Flexibility)
+   * `AromaticProportion` (Aromatic Atom Ratio)
+3. **Model Implementation:** Builds a Multiple Linear Regression framework utilizing the standard mathematical optimization rule:
+   $$\hat{y} = \beta_0 + \beta_1(X_1) + \beta_2(X_2) + \dots + \beta_n(X_n)$$
+4. **Validation Setup:** Partitions the underlying matrix into an **80% Training** and **20% Testing** split to ensure proper model validation.
+5. **Performance Evaluation:** Computes statistical regression evaluation metrics, including Mean Squared Error (MSE) and Coefficient of Determination ($R^2$ Score), across both dataset splits.
 
+---
+
+## 📁 Repository Contents
+
+```text
+delaney-solubility-prediction/
+│
+├── ML_Project.ipynb                          # Main machine learning workflow (Jupyter Notebook)
+├── requirements.txt                          # List of required Python dependency packages
+│
+├── data/                                     # Output/Input directory for simulation data
+│   └── delaney_solubility_with_descriptors.csv # Underlying Delaney solubility chemical dataset
+└── README.md                                 # Project documentation
